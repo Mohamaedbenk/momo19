@@ -1,0 +1,290 @@
+/* resiting */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+
+/* variables */
+:root{
+    --VeryDarkMagenta: hsl(300, 43%, 22%);
+    --DarkGrayishMagenta: hsl(303, 10%, 53%);
+    --LightGrayishMagenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+    --SoftPink: hsl(333, 80%, 67%);
+}
+
+
+/* healper classes */
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);   
+}
+
+/* intro-rating */
+.intro-rating{
+    margin-top: 125px;
+}
+
+.intro{
+    
+}
+
+.intro h1{
+    width: 60%;
+    color: var(--VeryDarkMagenta);
+    font-size: 45px;
+}
+
+.intro p{
+    width: 80%;
+    margin-top: 10px;
+    color: var(--DarkGrayishMagenta);
+}
+
+/* rating */
+.rating{
+
+}
+
+.pand{
+    display: flex;
+    align-items: center;
+    width: 440px;
+    height: 50px;
+    margin: 13px 0px;
+    padding: 0px 30px;
+    border-radius: 5px;
+    background-color: var(--LightGrayishMagenta);
+}
+.stars{
+    margin-right: 30px;
+}
+
+.pand h2{
+    color: var(--VeryDarkMagenta);
+    font-size: 15px;
+    font-weight: 550;
+}
+
+/* people-cards */
+.people-cards{
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+.grid-3-column{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.card{
+    width: 350px;
+    height: 235px;
+    padding: 40px 30px;
+    border-radius: 10px;
+    background-color: var(--VeryDarkMagenta);
+}
+.card img{
+    width: 44px;
+    border-radius: 100px;
+}
+.card .flex div{
+    margin-left: 15px;
+}
+
+.card .name{
+    font-size: 14px;
+    color: var(--LightGrayishMagenta);
+}
+.card .statu{
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 200;
+    opacity: 0.5;
+    color: var(--SoftPink);
+}
+
+.card p{
+    color: var(--LightGrayishMagenta);
+    margin-top: 15px;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+/* background */
+
+.bg{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    height: 100%;
+    z-index: -1;
+}
+
+.bg-top{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.bg-bottom{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+
+/* Utilities */
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+
+.ml-50{
+    margin-left: 50px;
+}
+.ml-100{
+    margin-left: 100px;
+}
+.ml-150{
+    margin-left: 150px;
+}
+.ml-4{
+    margin-left: 3rem;
+}
+
+
+
+.mt-16{
+    margin-top: 16px;
+}
+.mt-32{
+    margin-top: 32px;
+}
+
+
+/* tablet */
+@media (max-width: 1024px) and (min-width: 600px){
+    .container{
+        width: 80%;
+        margin: auto;
+    }
+    .grid{
+        display: block;
+    }
+    .intro-rating{
+        margin-top: 80px;
+    }
+    .intro h1{
+        font-size: 35px;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+    .intro p{
+        width: 100%;
+        margin-top: 20px;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .rating{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .pand{
+        flex-direction: column;
+        justify-content: center;
+        width: 330px;
+        height: 80px;
+        margin: 15px 0px;
+    }
+    .stars{
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    .grid-3-column{
+        display: block;
+    }
+    .phone-style{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* bg */
+    .bg{
+        display: none;
+    }
+}
+
+/* mobile */
+
+@media screen and (max-width: 600px){
+    .container{
+        width: 90%;
+        margin: auto;
+    }
+    .grid{
+        display: block;
+    }
+    .intro-rating{
+        margin-top: 80px;
+    }
+    .intro h1{
+        font-size: 35px;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+    .intro p{
+        width: 100%;
+        margin-top: 20px;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .rating{
+        margin-top: 40px;
+
+    }
+    .pand{
+        flex-direction: column;
+        justify-content: center;
+        width: 330px;
+        height: 80px;
+        margin: 15px 0px;
+    }
+    .stars{
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    .grid-3-column{
+        display: block;
+    }
+    .people-cards{
+        width: 80%;
+    }
+    /* bg */
+    .bg{
+        display: none;
+    }
+}
+
